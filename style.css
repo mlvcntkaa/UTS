@@ -1,28 +1,30 @@
 * {
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    overflow-y: scroll; /* Menambahkan overflow vertikal agar dapat di-scroll */
+    margin: 0px;
+    padding: 0px;
+    font-family:'Open Sans',sans-serif;
+    margin: auto;
+    width: 1350px;
+    margin: auto;
+    position: relative;
+
 }
 
-.wrapper {
+.navbar {
     width: 1100px;
     margin: auto;
     position: relative;
 }
 
-.logo a {
-    font-size: 20px;
+.nama {
+    font-size: 25px;
     font-weight: 750;
     float: left;
-    color: black;
 }
 
 .menu {
@@ -36,16 +38,16 @@ nav {
     line-height: 80px;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    background: white;
+    top: 0 ;
+    background: burlywood;
     z-index: 1;
 }
 
-nav ul {
+nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 nav ul li {
@@ -55,77 +57,169 @@ nav ul li {
 nav ul li a {
     color: black;
     text-align: center;
-    padding: 0 16px;
+    padding: 0px 16px 0px 16px ;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover{
+    text-decoration : underline;
 }
-
 .page1 {
-    background-image: url(1.jpg);
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; Remove this line to allow scrolling */
-    position: relative;
+        background-image: url('1.jpeg');
+        background-size:cover; 
+        height: 100vh; /* Mengatur tinggi elemen menjadi 100% dari tinggi viewport */
+  background-repeat: no-repeat; /* Tidak mengulang gambar latar belakang */
+ 
+    
 }
 
-.overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.nama {
-    font-size: 36px;
-    margin: 20px;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+.identitas {
+        font-size: 36px;
+        text-align: left;
+        padding-left: 150PX;
+        padding-top: 350px;
+    }
+.identitas h1 {
     color: white;
-    text-align: left;
-    font-size: 18px;
 }
-
+.identitas p {
+    color: white;
+}
 .resume-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+    border-color: black;
     font-size: 18px;
-    cursor: pointer;
-}
-
-.resume-button:hover {
-    background-color: #0056b3;
-}
-
-.about h2 {
-    font-size: 24px;
-}
-
-.experience {
     margin-top: 20px;
+    padding: 7px 7px 7px 7px;
 }
 
-.experience h3 {
-    font-size: 20px;
+.moreinfo {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+.judul{
+    margin-top: 10px;
+}
+.judul2 {
+    padding-top: 70px;
+    font-size: 50px;
+    color: rgb(230, 228, 224);
+    padding-left: 80px;
+}
+.judul h1{
+ padding-bottom: 5px;
+  font-size: 60px;
+  color: rgb(230, 228, 224);
+  padding-left: 80px;
 }
 
-.experience p {
-    font-size: 16px;
+.judul p {
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 100px;
 }
 
-.less {
+.judul1 h2 {
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 30px;
+    padding-left: 110px;
+
+}
+
+.judul1 p {
+    padding: 5px;
+    padding-left: 110px;
+    font-size: medium;
+}
+
+.btn-button {
+    background-color:black;
+    border-radius: 25px;;
+    font-size: 17px;
+    margin-top: 20px;
+    padding: 9px 9px 9px 9px;
+    float: right;
+    margin-right: 50px;
+    color: white;
+}
+.wd{
+    
+    padding-left: 125px;
+    padding-top: 150px;
+    width: 50%; 
+    text-align: left; 
+    font-size: 25px;
+    padding-bottom: 150px;
+    
+}
+.wd1 {
+    padding-left: 125px;
+    padding-top: 80px;
+    width: 50%; 
+    text-align: left; 
+    font-size: 25px;
+    padding-bottom: 150px;
+}
+
+.image {
+    text-align: center;
+    width: 50%;
     float: right;
 }
 
-.gambar {
-    width: 100px;
-    height: 100px;
-    align-items: center;
+.image img {
+    padding: 10px 10px 10px 10px ;
 }
+.container {
+    width: 50%;
+    float : right;
+}
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  .form-container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .form-container button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .desc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    font-size: 15px;
+    padding-right: 15px;
+  }
+  
+  svg {
+    padding: 5px;
+    width: 50px;
+  }
